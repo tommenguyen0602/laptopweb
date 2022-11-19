@@ -15,11 +15,13 @@
             <?php include 'ads_carousel.php';
             ?>
     </div>
-    <div id="best_seller_items.php">
+    <div id="best_seller_items">
         <?php include 'best_seller_items.php';
         ?>
     </div>
-    <div id = "footer"></div>
+    <div id = "footer">
+        <?php include 'footer.php';?>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

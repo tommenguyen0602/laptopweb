@@ -7,9 +7,9 @@
 </head>
 <body>
     
-<div id = "nav_menu">
-        <?php include 'nav_menu.php'
-        ?>
+    <div id = "nav_menu">
+            <?php include 'nav_menu.php'
+            ?>
     </div> 
     <div  id = "background"  style="padding-top: 80px">
         <img class = "img-fluid" src="/images/return-policy.png" alt="">
