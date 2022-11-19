@@ -1,5 +1,3 @@
-<?php
-echo '
 <script src="https://uhchat.net/code.php?f=7a9d08"></script>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-3">
 <div class="container-fluid">
@@ -37,4 +35,3 @@ echo '
   </div>
 </div>
 </nav>';
-?>
