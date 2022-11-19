@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <title>SE13|Home</title>
-    
+    <?php include 'head.php'; ?>
     
 </head>
 <body>
@@ -15,8 +15,8 @@
             <?php include 'ads_carousel.php';
             ?>
     </div>
-    <div id="best_seller_item.php">
-        <?php include 'best_seller_item.php';
+    <div id="best_seller_items.php">
+        <?php include 'best_seller_items.php';
         ?>
     </div>
     <div id = "footer"></div>
