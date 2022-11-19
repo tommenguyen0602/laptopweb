@@ -7,9 +7,10 @@
 </head>
 <body>
     
-    <div id="navigation">
-        <?php include 'navigation.php';?>
-    </div>
+<div id = "nav_menu">
+        <?php include 'nav_menu.php'
+        ?>
+    </div> 
     <div class = "container-fluid" id = "background"  style="padding-top: 80px">
         <img class = "img-fluid" src="/images/shipping-policy.png" alt="">
     </div>

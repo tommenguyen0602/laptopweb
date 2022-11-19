@@ -21,10 +21,10 @@
         <a class="nav-link" href="./store.php?sort=asc">Cửa hàng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="return-policy.php">Chính sách đổi trả-hoàn tiền</a>
+        <a class="nav-link" href="return_policy.php">Chính sách đổi trả-hoàn tiền</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="shipping-policy.php">Chính sách vận chuyển</a>
+        <a class="nav-link" href="shipping_policy.php">Chính sách vận chuyển</a>
       </li>
       <li class="nav-item">
           <a href="cartpage.php" >
