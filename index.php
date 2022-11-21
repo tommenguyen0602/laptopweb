@@ -1,3 +1,12 @@
+<?php
+require 'vendor/autoload.php';
+
+$loader = new \Twig\Loader\FilesystemLoader('views');
+$twig = new \Twig\Environment($loader);
+echo $twig->render('index.html', array(
+    'name' => 'shit'
+));
+?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -6,6 +15,7 @@
     
 </head>
 <body>
+    
     <div id="SITE_CONTAINER">
     <div id = "nav_menu">
         <?php include 'nav_menu.php'
