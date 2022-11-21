@@ -22,59 +22,7 @@
     </div>
     
     <div class="container" id = "card-collection">
-        <?php
-            session_start();
-            $servername = "sg2plzcpnl491286.prod.sin2.secureserver.net";
-            $username = "TheFirstUser123";
-            $password = "SE13number1";
-            $dbname = "MyWebDatabase";
-            // Create connection
-            $conn = mysqli_connect($servername, $username, $password, $dbname);
-            // Check connection
-            if (!$conn) {
-              die("Connection failed: " . mysqli_connect_error());
-            }
-            $sql;
-            if($_GET["sort"] == "asc"){
-                $sql = "SELECT * FROM products order by productPrice asc";
-            } else {
-                $sql = "SELECT * FROM products order by productPrice desc";
-            }
-            $result = mysqli_query($conn, $sql);
-            $result_size = mysqli_num_rows($result);
-            
-            for ($i=0; $i < $result_size/4; $i++) { 
-            
-                //open row tag
-                echo '<div class="row">';
-                for ($j=0; $j < 4; $j++) { 
-                    if ($i * 4 + $j < $result_size) {
-                        //print a card
-                        $card = mysqli_fetch_array($result);
-                        echo '
-                            <div class="col-3">
-                                <div class="card" >
-                                    <a href = "product-details.php?product-id=' .$card["productId"] . '">
-                                    <img class="card-img-top" src=".' . $card["productImage"] . ' " alt="">
-                                    </a>
-                                    <p>' . $card["productName"] . ' </p>
-                                    <p style="font-weight: bold">'.$card["productPrice"].'<sup>đ</sup></p>
-                                </div>
-                            </div>
-                        ';
-                    }
-    
-                }
-                //close row tag
-                echo '</div>';
-            }
-
-            
-
-
-
-            mysqli_close($conn);
-        ?>
+        
     </div>
     
     <div id="footer">
