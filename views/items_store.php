@@ -24,10 +24,10 @@
     <div class="container" id = "card-collection">
         <?php
             session_start();
-            $servername = "sg2plzcpnl491286.prod.sin2.secureserver.net";
-            $username = "TheFirstUser123";
-            $password = "SE13number1";
-            $dbname = "MyWebDatabase";
+            $servername = "sql111.epizy.com";
+            $username = "epiz_32907580";
+            $password = "GM5QZ9uPX1IQ";
+            $dbname = "epiz_32907580_store";
             // Create connection
             $conn = mysqli_connect($servername, $username, $password, $dbname);
             // Check connection
