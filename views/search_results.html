@@ -2,21 +2,21 @@
 <html lang="vi">
 <head>
     <title>SE13|Home</title>
-    <?php include 'head.php'; ?>
+    <?php include 'head.html'; ?>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
     
-    <div id="navigation">
-        <?php include 'navigation.php';?>
+    <div id="nav_menu">
+        <?php include 'nav_menu.html';?>
     </div> 
     <div class = "container" id="card-collection" style="padding-top: 80px">
         <?php 
-            $servername = "sg2plzcpnl491286.prod.sin2.secureserver.net";
-            $username = "TheFirstUser123";
-            $password = "SE13number1";
-            $dbname = "MyWebDatabase";
+            $servername = "sql111.epizy.com";
+            $username = "epiz_32907580";
+            $password = "GM5QZ9uPX1IQ";
+            $dbname = "epiz_32907580_store";
             // Create connection
             $conn = mysqli_connect($servername, $username, $password, $dbname);
             // Check connection
@@ -58,10 +58,10 @@
         ?>
     </div>
     <div id="chat-box">
-        <?php include 'chatbox.php';?>
+        <?php include 'chatbox.html';?>
     </div>
     <div id="footer">
-        <?php include 'footer.php';
+        <?php include 'footer.html';
             
         ?>
 
