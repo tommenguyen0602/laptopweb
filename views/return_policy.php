@@ -2,20 +2,20 @@
 <html lang="vi">
 <head>
     <title>SE13|Home</title>
-    <?php include 'head.php'; ?>    
+    <?php include 'head.html'; ?>    
     <link rel="stylesheet" href="return-policy.css">
 </head>
 <body>
     
     <div id = "nav_menu">
-            <?php include 'nav_menu.php'
+            <?php include 'nav_menu.html'
             ?>
     </div> 
     <div  id = "background"  style="padding-top: 80px">
         <img class = "img-fluid" src="/images/return-policy.png" alt="">
     </div>
     <div id="footer">
-        <?php include 'footer.php';
+        <?php include 'footer.html';
         session_start();
         print_r($_SESSION);?>
     </div>
