@@ -3,24 +3,16 @@
 <head>
     <title>SE13|Home</title>
     {% include 'head.html' %}
-    
 </head>
 <body>
-    <script>
-        function addProductToCart(productId){
-            
-            alert("Thêm hàng vào giỏ thành công");
-        }
-        
-    </script>
-    <div id="navigation">
+    <div class = "row" >
         {% include 'nav_menu.html' %}
 
     </div>
     <div id = "products-details" class = "container">
         <div class="row" id = "details-1">
             <div class="col-sm-6">
-            <img class = "image-responsive" src="{{productImage}}" alt="">
+            <img class = "img-fluid" src="{{productImage}}" alt="">
             </div>
             <div class="col-sm-6" id = "nameandprice">
                 <p id = "productName">{{productName}}</p>
@@ -39,8 +31,7 @@
         </div>
         
     </div>
-    <div id="footer">
-        
+    <div id="footer">   
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

@@ -14,7 +14,6 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM products WHERE productId = 4";
 $result = $conn->query($sql);
 $product = $result->fetch_assoc();
-echo $product["productName"];
 $conn->close();
 
 
