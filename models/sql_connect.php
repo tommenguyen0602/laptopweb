@@ -1,8 +1,8 @@
 <?php
-$servername = "sql111.epizy.com";
-$username = "epiz_32907580";
-$password = "GM5QZ9uPX1IQ";
-$dbname = "epiz_32907580_store";
+$servername = "localhost";
+$username = "root";
+$password = "06022002";
+$dbname = "store";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection

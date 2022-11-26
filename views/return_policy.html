@@ -2,22 +2,20 @@
 <html lang="vi">
 <head>
     <title>SE13|Home</title>
-    <?php include 'head.html'; ?>    
+    {% include 'head.html' %}
     <link rel="stylesheet" href="return-policy.css">
 </head>
 <body>
     
     <div id = "nav_menu">
-            <?php include 'nav_menu.html'
-            ?>
+    {% include 'nav_menu.html' %}
+
     </div> 
     <div  id = "background"  style="padding-top: 80px">
-        <img class = "img-fluid" src="/images/return-policy.png" alt="">
+        <img class = "img-fluid" src="/image/return_policy.png" alt="">
     </div>
     <div id="footer">
-        <?php include 'footer.html';
-        session_start();
-        print_r($_SESSION);?>
+    
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
