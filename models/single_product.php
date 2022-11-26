@@ -1,4 +1,5 @@
 <?php
+require '../vendor/autoload.php';
 $servername = "localhost";
 $username = "root";
 $password = "06022002";
@@ -10,16 +11,21 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT productId FROM products";
+$sql = "SELECT * FROM products WHERE productId = 4";
 $result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["productId"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
+$product = $result->fetch_assoc();
+echo $product["productName"];
 $conn->close();
+
+
+$loader = new \Twig\Loader\FilesystemLoader('../views');
+$twig = new \Twig\Environment($loader);
+echo $twig->render('product_details.html', array(
+    'productName' => $product["productName"],
+    'productBrand' => $product["productBrand"],
+    'productCPU' => $product["productCPU"],
+    'productRam' => $product["productRam"],
+    'productPrice' => $product["productPrice"],
+    'productImage' => $product["productImage"],
+));
 ?>
