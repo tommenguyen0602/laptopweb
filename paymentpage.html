@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SE13 Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">SE13</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./store.html">Cửa hàng</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./return_policy.html">Chính sách đổi trả-hoàn tiền</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./shipping_policy.html">Chính sách vận chuyển</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./cartpage.html">
+                <i class="bi bi-cart"></i>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!------------Paymentpage----------->
+  <div class="step">
+											
+    <div class="step-sections " step="1">
+        
+            
+        
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Thông tin giao hàng</h2>
+                </div>
+                <div class="section-content section-customer-information no-mb">
+                    
+                        <input name="utf8" type="hidden" value="✓">
+                        <div class="inventory_location_data">
+                            
+                                <input name="customer_shipping_country" type="hidden" value="241">
+                                <input name="customer_shipping_province" type="hidden" value="">
+                                <input name="customer_shipping_district" type="hidden" value="">
+                                <input name="customer_shipping_ward" type="hidden" value="">
+                            
+                        </div>
+                        
+                    
+                    
+                    <div class="fieldset">
+                        
+                        
+                            <div class="field field-required  ">
+                                <div class="field-input-wrapper">
+                                    <label class="field-label" for="billing_address_full_name"></label>
+                                    <input placeholder="Họ và tên" autocapitalize="off" spellcheck="false" class="field-input" size="30" type="text" id="billing_address_full_name" name="billing_address[full_name]" value="" autocomplete="false">
+                                </div>
+                                
+                            </div>
+                        
+                        
+                            
+                                <div class="field field-required field-two-thirds  ">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="checkout_user_email"></label>
+                                        <input autocomplete="false" placeholder="Email" autocapitalize="off" spellcheck="false" class="field-input" size="30" type="email" id="checkout_user_email" name="checkout_user[email]" value="">
+                                    </div>
+                                    
+                                </div>
+                            
+                        
+                        
+                            <div class="field field-required field-third  ">
+                                <div class="field-input-wrapper">
+                                    <label class="field-label" for="billing_address_phone"></label>
+                                    <input autocomplete="false" placeholder="Số điện thoại" autocapitalize="off" spellcheck="false" class="field-input" size="30" maxlength="15" type="tel" id="billing_address_phone" name="billing_address[phone]" value="">
+                                </div>
+                                
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="fieldset">
+                        
+                                <form autocomplete="off" id="form_update_shipping_method" class="field default" accept-charset="UTF-8" method="post">
+                                    <input name="utf8" type="hidden" value="✓">
+                                    <div class="content-box mt0">
+                                                   
+                                        <div id="form_update_location_customer_shipping" class="order-checkout__loading radio-wrapper content-box-row content-box-row-padding content-box-row-secondary " for="customer_pick_at_location_false">
+                                            <input name="utf8" type="hidden" value="✓">
+                                        
+                                                <div class="field field-required  ">
+                                                    <div class="field-input-wrapper">
+                                                        <label class="field-label" for="billing_address_address1"></label>
+                                                        <input placeholder="Địa chỉ" autocapitalize="off" spellcheck="false" class="field-input" size="30" type="text" id="billing_address_address1" name="billing_address[address1]" value="">
+                                                    </div>
+                                                    
+                                                </div>
+                                        
+
+
+                                            <input name="selected_customer_shipping_country" type="hidden" value="">
+                                            <input name="selected_customer_shipping_province" type="hidden" value="">
+                                            <input name="selected_customer_shipping_district" type="hidden" value="">
+                                            <input name="selected_customer_shipping_ward" type="hidden" value="">
+                                            
+                                            <div class="field field-show-floating-label field-required field-third ">
+                                                <div class="field-input-wrapper field-input-wrapper-select">
+                                                    <label class="field-label" for="customer_shipping_province"></label>
+                                                    <select class="field-input" id="customer_shipping_province" name="customer_shipping_province">
+                                                        <option data-code="null" value="null" selected="">
+                                                        
+                                                        Chọn tỉnh / thành </option>
+                                                        
+                                                            
+                                                                
+                                                                    <option data-code="HC" value="50">Hồ Chí Minh</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HI" value="1">Hà Nội</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="DA" value="32">Đà Nẵng</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="AG" value="57">An Giang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BV" value="49">Bà Rịa - Vũng Tàu</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BI" value="47">Bình Dương</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BP" value="45">Bình Phước</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BU" value="39">Bình Thuận</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BD" value="35">Bình Định</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BL" value="62">Bạc Liêu</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BG" value="15">Bắc Giang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BK" value="4">Bắc Kạn</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BN" value="18">Bắc Ninh</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="BT" value="53">Bến Tre</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="CB" value="3">Cao Bằng</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="CM" value="63">Cà Mau</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="CN" value="59">Cần Thơ</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="GL" value="41">Gia Lai</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HG" value="2">Hà Giang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HM" value="23">Hà Nam</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HT" value="28">Hà Tĩnh</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HO" value="11">Hòa Bình</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HY" value="21">Hưng Yên</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HD" value="19">Hải Dương</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HP" value="20">Hải Phòng</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="HU" value="60">Hậu Giang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="KH" value="37">Khánh Hòa</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="KG" value="58">Kiên Giang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="KT" value="40">Kon Tum</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="LI" value="8">Lai Châu</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="LA" value="51">Long An</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="LO" value="6">Lào Cai</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="LD" value="44">Lâm Đồng</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="LS" value="13">Lạng Sơn</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="ND" value="24">Nam Định</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="NA" value="27">Nghệ An</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="NB" value="25">Ninh Bình</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="NT" value="38">Ninh Thuận</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="PT" value="16">Phú Thọ</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="PY" value="36">Phú Yên</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="QB" value="29">Quảng Bình</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="QM" value="33">Quảng Nam</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="QG" value="34">Quảng Ngãi</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="QN" value="14">Quảng Ninh</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="QT" value="30">Quảng Trị</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="ST" value="61">Sóc Trăng</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="SL" value="9">Sơn La</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TH" value="26">Thanh Hóa</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TB" value="22">Thái Bình</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TY" value="12">Thái Nguyên</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TT" value="31">Thừa Thiên Huế</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TG" value="52">Tiền Giang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TV" value="54">Trà Vinh</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TQ" value="5">Tuyên Quang</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="TN" value="46">Tây Ninh</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="VL" value="55">Vĩnh Long</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="VT" value="17">Vĩnh Phúc</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="YB" value="10">Yên Bái</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="DB" value="7">Điện Biên</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="DC" value="42">Đắk Lắk</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="DO" value="43">Đắk Nông</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="DN" value="48">Đồng Nai</option>
+                                                                
+                                                            
+                                                                
+                                                                    <option data-code="DT" value="56">Đồng Tháp</option>
+                                                                
+                                                             
+                                                          
+                                                    </select>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            
+                                                
+                                                    <div class="field field-show-floating-label field-required field-third ">
+                                                        <div class="field-input-wrapper field-input-wrapper-select">
+                                                            <label class="field-label" for="customer_shipping_district"></label>
+                                                            <select class="field-input" id="customer_shipping_district" name="customer_shipping_district">
+                                                                <option data-code="null" value="null" selected="">Chọn quận / huyện</option>
+                                                                
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                        <div class="field field-show-floating-label field-required  field-third  ">
+                                                            <div class="field-input-wrapper field-input-wrapper-select">
+                                                                <label class="field-label" for="customer_shipping_ward"></label>
+                                                                <select class="field-input" id="customer_shipping_ward" name="customer_shipping_ward">
+                                                                    <option data-code="null" value="null" selected="">Chọn phường / xã</option>
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    
+                                                
+                                            
+                                            <div id="div_location_country_not_vietnam" class="section-customer-information " style="display: none;">
+                                                <div class="field field-two-thirds">
+                                                    <div class="field-input-wrapper">
+                                                        <label class="field-label" for="billing_address_city"></label>
+                                                        <input placeholder="Thành phố" autocapitalize="off" spellcheck="false" class="field-input" size="30" type="text" id="billing_address_city" name="billing_address[city]" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="field field-third">
+                                                    <div class="field-input-wrapper">
+                                                        <label class="field-label" for="billing_address_zip"></label>
+                                                        <input placeholder="Mã bưu chính" autocapitalize="off" spellcheck="false" class="field-input" size="30" type="text" id="billing_address_zip" name="billing_address[zip]" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            
+                                    </div>
+                                </form>
+                        
+                    </div>
+                    
+                </div>
+                <div id="change_pick_location_or_shipping">
+                    
+                    
+                </div>
+            </div>
+                  
+        
+        
+    </div>
+    
+    <div class="step-footer">
+        
+            
+                <form id="form_next_step" accept-charset="UTF-8" method="post">
+                    <input name="utf8" type="hidden" value="✓">
+                    <button type="submit" class="step-footer-continue-btn btn">
+                        <span class="btn-content">Tiếp tục đến phương thức thanh toán</span>
+                        <i class="btn-spinner icon icon-button-spinner"></i>
+                    </button>
+                </form>
+                <a class="step-footer-previous-link" href="./cartpage.html">
+                    Giỏ hàng
+                </a>
+            
+        
+    </div>
+    </div>
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://tommenguyen0602.wixsite.com/se13">SE13.com</a> 
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

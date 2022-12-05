@@ -1,3 +1,12 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.7
+-- https://www.phpmyadmin.net/
+--
+-- Máy chủ: localhost:3306
+-- Thời gian đã tạo: Th4 21, 2022 lúc 04:31 AM
+-- Phiên bản máy phục vụ: 5.7.37-cll-lve
+-- Phiên bản PHP: 7.3.32
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;

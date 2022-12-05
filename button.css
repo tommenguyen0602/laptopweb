@@ -1,0 +1,47 @@
+.buttonfx{
+    color: black; /* button text color */
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #eee;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px; 
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif; /* use google font */
+    line-height: 2;
+    position: relative;
+      display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+      text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+  
+  .curtaindown{
+    border: 1px solid #eee;
+    border-bottom: 4px solid #eee;
+  }
+  
+  .curtaindown:before,
+  .curtaindown:after{
+    background: #259f6c;
+    transform: translate3D(0,-100%,0);
+  }
+  
+  .curtaindown:after{
+    transform: translate3D(0,100%,0);
+  }
+  
+  .curtaindown:hover:before,
+  .curtaindown:hover:after{
+    transform: translate3D(0,-50%,0);
+    transition: all .5s;
+  }
+  
+  .curtaindown:hover:after{
+    transform: translate3D(0,50%,0);
+  }
+  

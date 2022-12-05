@@ -1,0 +1,24 @@
+
+
+      function createMenuItem(name) {
+            let li = document.createElement('tr');
+            li.textContent = name;
+            return li;
+      }
+      const menu = document.querySelector('#menu');
+
+      menu.appendChild(createMenuItem('Home'));
+      menu.appendChild(createMenuItem('Services'));
+      menu.appendChild(createMenuItem('About Us'));
+
+
+      function showHint(str) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+        

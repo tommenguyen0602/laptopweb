@@ -1,0 +1,26 @@
+{
+  "name": "btl_cnpm_nhom13",
+  "version": "1.0.0",
+  "description": "Sofware Engineering's Assignment\r T LẠY CHÚNG MÀI CODE ĐI PLSSSSS\r # docs for study and research:\r # file organization in cpanel\r #  https://support.reclaimhosting.com/hc/en-us/articles/1500004804522-Understanding-Folder-Structures-in-cPanel\r <h1> t check history mà đứa nào mà ko update daily lên git tự động bank 10k vào 1014491942 vcb nha</h1>",
+  "main": "connect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdthinh20021444/BTL_CNPM_Nhom13.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdthinh20021444/BTL_CNPM_Nhom13/issues"
+  },
+  "homepage": "https://github.com/vdthinh20021444/BTL_CNPM_Nhom13#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

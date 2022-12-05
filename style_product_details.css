@@ -1,0 +1,38 @@
+#product-details{
+    margin-top: 50px;
+    
+
+}
+.container{
+    margin-top: 50px;
+}
+#productName{
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 32px;
+}
+
+
+#details-2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:large;
+    
+    color: black;
+    padding-top: 3em;
+    
+    line-height: big;
+    
+}
+
+#nameandprice{
+    background-color: white;
+    color: black;
+    padding-top: 1em;
+    line-height: big;
+}
+#number-box{
+    border: 1px solid rgb(37, 2, 2);
+    border-radius: 3px;
+    height:3em;
+    
+}

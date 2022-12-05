@@ -1,7 +1,0 @@
-{
-    "require": {
-        "php": "^7.2||^8.0",
-        "monolog/monolog": "2.0.*",
-        "twig/twig":"3.*.*"
-    }
-}
